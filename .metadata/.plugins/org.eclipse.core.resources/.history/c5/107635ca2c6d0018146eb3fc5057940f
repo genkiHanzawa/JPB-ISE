@@ -1,0 +1,30 @@
+package calc;
+
+public class Double {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i=0;
+		System.out.println("配列の個数を指定してください");
+		int a = new java.util.Scanner(System.in).nextInt();
+		double[] ab = new double[a];
+		for (i = 0; i < a;i++) {
+			System.out.println(i+ "個目の変数を入れてください");
+			ab[i] =  new java.util.Scanner(System.in).nextDouble();
+		}
+	
+		System.out.println(getAverage(ab,a));
+	}
+	
+	public static double getAverage(double[] ab,int a) {
+		double res = 0;
+		double sub=0;
+		for (int i = 0; i< a ;i++) {
+			sub = sub + ab[i];
+			res = sub / a;
+		}
+		return res;
+	}
+
+}

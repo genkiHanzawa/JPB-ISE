@@ -1,0 +1,34 @@
+package calc;
+
+import java.util.Scanner;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		Logics lo = new Logics();
+		Main main = new Main();
+		main.hello();
+		System.out.print("Java");
+		System.out.println(main.world());
+		 Scanner scan = new Scanner(System.in);
+	        int i = scan.nextInt();
+	        double d = scan.nextDouble();
+	        scan.nextLine(); // nextDoubleでは行の最後まで読まれていない可能性があるためスキップしたい.
+	        String s = scan.nextLine();
+	        
+
+	        System.out.println("String: " + s);
+	        System.out.println("Double: " + d);
+	        System.out.println("Int: " + i);
+	}
+	
+	void hello() {
+		System.out.print("hello");
+	}
+	String world() {
+		String message = "world";
+		return message;
+	}
+	
+}

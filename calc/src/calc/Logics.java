@@ -1,0 +1,34 @@
+package calc;
+
+public class Logics extends Main {
+
+	Logics() {
+
+	}
+
+	private int hp;
+
+	public Logics(int hp) {
+		super();
+		this.hp = hp;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public void add(int x, int y) {
+		int answer = x + y;
+		System.out.println(answer);
+	}
+
+	public static void sub(int x, int y) {
+		int answer = x - y;
+		System.out.println(answer);
+	}
+
+}

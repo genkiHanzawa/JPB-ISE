@@ -1,0 +1,21 @@
+package calc;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		Main main = new Main();
+		main.hello();
+		System.out.print("Java");
+		System.out.println(main.world());
+	}
+	
+	void hello() {
+		System.out.print("hello");
+	}
+	String world() {
+		String message = "world";
+		return message;
+	}
+	
+}

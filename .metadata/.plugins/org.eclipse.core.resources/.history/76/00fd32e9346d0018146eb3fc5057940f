@@ -1,0 +1,24 @@
+package calc;
+
+import java.util.ArrayList;
+
+public class GetList {
+
+	static ArrayList a = new ArrayList();
+	static ArrayList b = new ArrayList();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	    a.add("kamirari");
+	    a.add("taiatari");
+	    b.add(20);
+	    b.add(30);
+	    System.out.println(a);
+	}
+
+	ArrayList getWaza() {
+		
+		return this.a;
+	}
+}

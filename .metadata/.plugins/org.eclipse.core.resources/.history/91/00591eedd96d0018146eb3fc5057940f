@@ -1,0 +1,23 @@
+package calc;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class GetList {
+
+	Map<String, Integer> map = new HashMap<String, Integer>();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GetList kore = new GetList();
+		kore.map.put("kaminari",30);
+		kore.map.put("taiatari", 20);
+	    System.out.println(kore.map);
+	    System.out.println(kore.map.get("taiatari"));
+	}
+
+	Map getWaza() {
+		
+		return this.map;
+	}
+}
